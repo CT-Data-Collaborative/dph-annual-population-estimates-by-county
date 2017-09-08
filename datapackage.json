@@ -21,7 +21,7 @@
   }],
   "contributor": [],
   "resources": [{
-    "path": "data/data.csv",
+    "path": "data/dph-population-by-county_2016.csv",
     "format": "csv",
     "schema": {
       "fields": [{
