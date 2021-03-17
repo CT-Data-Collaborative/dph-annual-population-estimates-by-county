@@ -65,7 +65,7 @@ total_pop <- rbind(county_pop, state_pop)
 percents <- merge(total_pop, state_pop, by = "Year")
 
 percents <- percents %>% 
-  mutate(Value = round((as.numeric(Value.x) / Value.y)*100, 2)) %>% 
+  mutate(Value = round((as.numeric(Value.x) / as.numeric(Value.y))*100, 2)) %>% 
   select(Year, County.x, Value) %>% 
   rename(County = County.x)
 
@@ -91,7 +91,7 @@ total_pop_fips <- total_pop_fips %>%
 # Write collated data to file.
 write.table(
   total_pop_fips,
-  file.path(getwd(), "data", "dph-population-by-county_2016.csv"),
+  file.path(getwd(), "data", "dph-population-by-county_2019.csv"),
   sep = ",",
   row.names = F
 )
