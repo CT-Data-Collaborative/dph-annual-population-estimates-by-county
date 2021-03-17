@@ -15,13 +15,13 @@
     "web": ""
   }],
   "author":[{
-    "name": "Jenna Daly",
-    "email": "jdaly@ctdata.org",
-    "web": "http://ctdata.org"
+    "name": "CTData Collaborative",
+    "email": "info@ctdata.org",
+    "web": "https://ctdata.org"
   }],
   "contributor": [],
   "resources": [{
-    "path": "data/dph-population-by-county_2016.csv",
+    "path": "data/dph-population-by-county_2019.csv",
     "format": "csv",
     "schema": {
       "fields": [{
@@ -63,7 +63,7 @@
       }
     }
   ],
-  "last_modified": "09/08/2017",
+  "last_modified": "03/17/2021",
   "ckan_extras": {
     "full_description": {
       "ckan_name": "Full Description",
@@ -130,12 +130,13 @@
       "ckan_name": "Years in Catalog",
       "value": ["1996", "1997", "1998", "1999", "2000", "2001", "2002", 
                 "2003", "2004", "2005", "2006", "2007", "2008", "2009", 
-                "2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+                "2010", "2011", "2012", "2013", "2014", "2015", "2016",
+                "2017", "2018", "2019"],
       "type": "array"
     },
     "latest_year": {
       "ckan_name": "Latest Year Available",
-      "value": "2016",
+      "value": "2019",
       "type": "string"
     },
     "disabled_views": {
@@ -160,7 +161,7 @@
       "ckan_name": "Default",
 			"value": {
 		 		"County": "Hartford County",
-		 		"Year": ["2016"],
+		 		"Year": ["2019"],
 		 		"Measure Type": "Number", 
 		 		"Variable": "Estimated Population"
 			},
